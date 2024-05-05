@@ -14,7 +14,6 @@ typedef double vec[N];
 // Тип матрицы
 typedef double mat[N][N];
 
-void print_mat(mat m);
 // Скалярное произведение
 double dot(vec v, vec u) {
     double res = 0;
@@ -96,6 +95,7 @@ void set_column(mat m, int i, vec col) {
     }
 }
 
+// Нормализация столбцов матрицы
 void normalize(mat m) {
     vec v;
     for(int i = 0; i < N; i++) {
